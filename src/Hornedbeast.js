@@ -19,9 +19,10 @@ class Hornedbeast extends React.Component {
     return (
       <article id={this.props.key}>
       <h2 onClick={this.handleVotes}>{this.props.title}</h2>
+      <p>👍: {this.state.votes}</p>
       <img src={this.props.image_url} alt={this.props.description}/>
       <p>{this.props.description}</p>
-      <p>👍: {this.state.waves}</p>
+      
       </article>
     )
   }

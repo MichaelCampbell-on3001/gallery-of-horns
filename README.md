@@ -4,23 +4,23 @@ Number and name of feature: Feature 1: Display images
 
 Estimate of time needed to complete: 1 hour
 
-Start time: 5pm
+Start time: 6pm
 
-Finish time: _____
+Finish time: 7pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr
 
 ---
 
 Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hours
 
-Start time: _____
+Start time: 7pm
 
-Finish time: _____
+Finish time: 8:30
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1.5 hours
 
 ---
 
