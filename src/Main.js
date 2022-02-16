@@ -5,10 +5,10 @@ class Main extends React.Component {
   render() {
     let hornedbeast = [];
     
-    this.props.data.forEach(value => {
-         value.hornedbeast.push(
+    this.props.data.forEach(beast => {
+         hornedbeast.push(
 
-          <Hornedbeast image_url={this.props.image_url} title={this.props.title} description={this.props.description} horns={this.props.horns} keyword={this.props.keyword} />
+          <Hornedbeast image_url={beast.image_url} title={beast.title} description={beast.description} horns={beast.horns} keyword={beast.keyword} />
         
 
          )
