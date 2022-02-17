@@ -1,5 +1,10 @@
 import React from "react";
 
+//import Modal from 'react-boostrap/Modal';
+//import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+
+
 class Hornedbeast extends React.Component {
 
   constructor(props){
@@ -17,12 +22,23 @@ class Hornedbeast extends React.Component {
 
   render() {
     return (
-      <article id={this.props.key}>
-      <h2 onClick={this.handleVotes}>{this.props.title}</h2>
-      <p>👍: {this.state.votes}</p>
-      <img src={this.props.image_url} alt={this.props.description}/>
-      <p>{this.props.description}</p>
       
+      <article> 
+        
+
+          <Card style={{ width: '18rem' }}>
+            <Card.Img 
+            onClick={this.handleVotes}
+            variant="top"
+            src={this.props.image_url} 
+            alt={this.props.description}/>
+      <Card.Title onClick={this.handleVotes}> {this.props.title}</Card.Title>
+      <p>👍: {this.state.votes}</p>
+      
+      <Card.Text>{this.props.description}</Card.Text>
+      
+      
+      </Card>
       </article>
     )
   }

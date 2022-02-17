@@ -26,7 +26,7 @@ Actual time needed to complete: 1.5 hours
 
 Number and name of feature: Feature 3: Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 3:30
 
 Start time: _____
 
@@ -34,4 +34,16 @@ Finish time: _____
 
 Actual time needed to complete: _____
 
---
+---
+
+Number and name of feature: Display a Modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+---
