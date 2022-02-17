@@ -40,7 +40,7 @@ Number and name of feature: Display a Modal
 
 Estimate of time needed to complete: 2 hours
 
-Start time: _____
+Start time: didnt get it done
 
 Finish time: _____
 
