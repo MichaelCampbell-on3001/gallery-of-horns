@@ -1,8 +1,12 @@
-import { Card, Button } from "react-bootstrap";
 import React, { Component } from "react";
 import items from "../data.json";
 import Selectedhorns from "./selectedhorns";
-//import header from "./header";
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/row';
+import CardGroup from 'react-bootstrap/CardGroup';
+
 
 
 class Main extends Component {
@@ -18,8 +22,9 @@ class Main extends Component {
   render() {
     return (
       <>
+      
       <Selectedhorns open={this.props.open}/>
-      <Card>
+      <CardGroup>
         {this.props.horns < 1 || isNaN(this.props.horns) ?
         items.map(item =>           
         <HornedCreatures
@@ -34,7 +39,7 @@ class Main extends Component {
             desc={item.description}
             imgUrl={item.image_url}
           />)}
-      </Card>
+      </CardGroup>
       </>
     );
   }
@@ -64,10 +69,11 @@ class HornedCreatures extends Component {
 
   render() {
     return (
+      
      
-
-
-      <Card bg="dark" text="light">
+      <Row xs={2} sm={3} md={4} lg={6}>
+      <Col className='mt-4'>
+      <Card style={{ width: '18rem' }}>
         <Selectedhorns
           show={this.state.showModal}
           onClose={this.handleClose}
@@ -91,6 +97,8 @@ class HornedCreatures extends Component {
           >{`🖤 ${this.state.likes}`}</Button>
         </Card.Body>
       </Card>
+      </Col>
+      </Row>
     );
   }
 }
