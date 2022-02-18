@@ -1,5 +1,5 @@
 import React from "react";
-import Hornedbeast from "./Hornedbeast";
+import Hornedbeast from "../Hornedbeast";
 import Row from 'react-bootstrap/Row'
 class Main extends React.Component {
   render() {
