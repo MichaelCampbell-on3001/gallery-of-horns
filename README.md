@@ -40,7 +40,9 @@ Number and name of feature: Display a Modal
 
 Estimate of time needed to complete: 2 hours
 
+
 Start time: 5 pm
+
 
 Finish time: 7 pm
 
