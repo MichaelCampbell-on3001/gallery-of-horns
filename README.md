@@ -1,5 +1,5 @@
 # Netlify Link https://stoic-babbage-acc149.netlify.app
-
+[^1]
 Number and name of feature: Feature 1: Display images
 
 Estimate of time needed to complete: 1 hour
@@ -49,3 +49,19 @@ Finish time: 7 pm
 Actual time needed to complete: 2pm
 
 ---
+
+Number and name of feature: Feature 4 Filter
+
+Estimate of time needed to complete: 2 hours
+
+
+Start time: 4 pm
+
+
+Finish time: 7 pm
+
+Actual time needed to complete: 3pm 
+
+---
+[^1]:Often times I have to go back and fix yesterdays lab to work on todays lab.
+
