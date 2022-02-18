@@ -1,4 +1,4 @@
-import { Card, CardColumns, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import React, { Component } from "react";
 import items from "../data.json";
 import Selectedhorns from "./selectedhorns";
@@ -19,7 +19,7 @@ class Main extends Component {
     return (
       <>
       <Selectedhorns open={this.props.open}/>
-      <CardColumns>
+      <Card>
         {this.props.horns < 1 || isNaN(this.props.horns) ?
         items.map(item =>           
         <HornedCreatures
@@ -34,7 +34,7 @@ class Main extends Component {
             desc={item.description}
             imgUrl={item.image_url}
           />)}
-      </CardColumns>
+      </Card>
       </>
     );
   }
