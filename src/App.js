@@ -1,47 +1,35 @@
-import React from "react";
-import './App.css'; 
-import Header from "./Header.js"
-import Main from "./Main"
-import Footer from "./Footer";
-import data from './data.json';
-import Modal from "react-bootstrap/Modal";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
+import { Container } from 'react-bootstrap'
+//import { Component } from 'react'
+import React from 'react';
+import  Main from './components/main.js';
+import  Footer from './components/footer.js';
+import  Header from './components/header.js';
+
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-      showModal:true,
-    }
 
+    this.state = {
+      horns: 0,
+
+      showmodal: false 
+    };
   }
 
+  onChange = (e) => {
+    this.setState({ horns: parseInt(e.target.value) });
+  };
 
-
-  handleCloseModal = () => {
-    this.setState({
-      showModal:false
-    })
-  }
-
-  handleShowModal = () =>{
-    this.setState({
-      showModal: true
-    })
-  }
-
-  render(){
+  render() {
     return (
-  <>
-     <Header />
-     <Modal show={this.state.showModal} onHide={this.handleCloseModal}>
-       <Modal.Header closeButton>
-         <Modal.Title>{}</Modal.Title>
-       </Modal.Header>
-
-     </Modal>
-     <Main data={data}/>
-     <Footer />     
-  </>
+      <Container fluid>
+        <Header onChange={this.onChange}/>
+        <Main horns={this.state.horns}/>
+        <Footer />
+      </Container>
     );
   }
 }
