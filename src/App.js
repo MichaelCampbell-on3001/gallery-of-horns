@@ -4,10 +4,17 @@ import Header from "./Header.js"
 import Main from "./Main"
 import Footer from "./Footer";
 import data from './data.json';
-import Modal from "react-bootstrap";
+import Modal from "react-bootstrap/Modal";
 
 class App extends React.Component {
-  showModal:true
+  constructor(props){
+    super(props);
+    this.state={
+      showModal:true,
+    }
+
+  }
+
 
 
   handleCloseModal = () => {
