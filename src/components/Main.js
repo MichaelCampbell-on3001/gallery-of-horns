@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import items from "../data.json";
 import Selectedhorns from "./selectedhorns";
 import Col from 'react-bootstrap/Col';
@@ -9,7 +9,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 
 
-class Main extends Component {
+class Main extends React.Component {
   constructor(props) {
     super(props);
 
@@ -45,7 +45,7 @@ class Main extends Component {
   }
 }
 
-class HornedCreatures extends Component {
+class HornedCreatures extends React.Component {
   
   constructor(props) {
     super(props);

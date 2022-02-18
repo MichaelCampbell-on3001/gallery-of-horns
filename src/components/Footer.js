@@ -1,9 +1,12 @@
-import{Navbar} from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import { Component } from 'react';
 
-export default function Footer () {
-  return (
-    <Navbar bg = 'dark' variant='dark'>
-      <Navbar.Brand href="#bio">Michael Campbell</Navbar.Brand>
-    </Navbar>
-  );
+export default class Footer extends Component {
+  render() {
+    return (
+      <Navbar bg='dark' variant='dark'>
+        <Navbar.Brand href="#bio">Michael Campbell</Navbar.Brand>
+      </Navbar>
+    );
+  }
 }
